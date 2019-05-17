@@ -24,9 +24,19 @@
     "@nestjs/microservices": "^6.0.4",
     "@nestjs/platform-express": "^6.0.4",
     "@nestjs/websockets": "^6.0.4",
+    "chai": "^4.2.0",
+    "che": "0.0.6-3",
+    "cheerio": "^1.0.0-rc.3",
+    "form-data": "^2.3.3",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "reflect-metadata": "0.1.13",
+    "request": "^2.88.0",
     "rimraf": "2.6.3",
-    "rxjs": "6.4.0"
+    "rxjs": "6.4.0",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "@nestjs/testing": "6.1.1",
