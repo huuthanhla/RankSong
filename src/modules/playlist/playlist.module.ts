@@ -4,11 +4,12 @@ import { PlaylistController } from './playlist.controller';
 
 import { PlaylistService } from './playlist.service';
 import { PlaylistLoader } from './playlist.loader';
-import { PlaylistRepository } from './playlist.repository';
+
+
 
 @Global()
 @Module({
     controllers: [ PlaylistController ],
-    providers: [ PlaylistService, PlaylistLoader, PlaylistRepository ]
+    providers: [ PlaylistService, PlaylistLoader ]
 })
 export class PlaylistModule {}

@@ -10,19 +10,21 @@ export class RankController {
     @Get('/:country')
     async getRanks(@Response() response, @Param('country') country) {
         const countryName = this.rankService.getCountryName(country);
-        const { songs, playlists, videos } = await this.rankService.getRanks(country);
-
+        const { songs } = await this.rankService.getRanks(country);
+        console.log('Im getRanks --------------------')
         return response.status(HttpStatus.OK).json({data: {
             country: countryName,
-            songs, playlists, videos
+            songs
         }});
     }
 
     @Get('/songs/:country')
     async getSongs(@Response() response, @Param('country') country) {
+        console.log('Im getSongs --------------------')
+
         const countryName = this.rankService.getCountryName(country);
         const tracks = await this.rankService.getSongs(country);
-
+        
         return response.status(HttpStatus.OK).json({data: {
             country: countryName,
             tracks: tracks

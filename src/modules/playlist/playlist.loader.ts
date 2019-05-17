@@ -7,6 +7,7 @@ import { Injectable } from '@nestjs/common';
 export class PlaylistLoader {
 
     response(url) {
+        console.log("url " + url)
         return this.request(url)
             .then(body => {
                 const $body = $(body);
@@ -22,6 +23,7 @@ export class PlaylistLoader {
     }
 
     responseTracks(url) {
+        console.log('Im responseTracks ' + url)
         return this.request(url)
             .then(body => {
                 const $body = $(body);

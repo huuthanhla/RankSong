@@ -7,16 +7,13 @@ import { RankLoader } from './rank.loader';
 
 import { PlaylistLoader } from '../playlist/playlist.loader';
 
-import { PlaylistRepository } from '../playlist/playlist.repository';
-import { SongRepository } from '../song/song.repository';
-import { VideoRepository } from '../video/video.repository';
+
 
 @Global()
 @Module({
     controllers: [ RankController ],
     providers: [
-        RankService, RankLoader,
-        PlaylistRepository, SongRepository, VideoRepository,
+        RankService, RankLoader,        
         PlaylistLoader
     ]
 })

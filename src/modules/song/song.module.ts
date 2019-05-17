@@ -4,11 +4,10 @@ import { SongController } from './song.controller';
 
 import { SongService } from './song.service';
 import { SongLoader } from './song.loader';
-import { SongRepository } from './song.repository';
 
 @Global()
 @Module({
     controllers: [ SongController ],
-    providers: [ SongService, SongLoader, SongRepository ]
+    providers: [ SongService, SongLoader ]
 })
 export class SongModule {}
